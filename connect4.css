@@ -1,0 +1,46 @@
+/* game board table */
+
+#board td {
+  width: 50px;
+  height: 50px;
+  /*lightyellow background color helps add some dimension to gameboard*/
+  background-color: lightgoldenrodyellow;
+  /*thicker border and gold color resembles the physical connect 4 game*/
+  border: solid 3px gold;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  /*adjust margin from 5px to 1px to compensate for the 4px border width so piece stays centered*/
+  margin: 1px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+.piece.p1 {
+  background-color:red;
+  /*double border and darkred color help bring dimension to piece so it doesnt appear flat*/
+  border: double;
+  border-width: 4px;
+  border-color: darkred;
+}
+
+.piece.p2 {
+  background-color: blue;
+  border: double ;
+  border-width: 4px;
+  border-color: midnightblue;
+
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: gold;
+}
